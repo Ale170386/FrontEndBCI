@@ -1,0 +1,54 @@
+.bcilogo {
+    padding-top: 1em;
+}
+
+.monologo {
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    width: 40%;
+    max-height: 100px;
+    height: auto;
+    padding-top: 1em;
+}
+
+.logodefontana img {
+    max-height: 30px;
+}
+
+#cardTitle {
+    background-color: rgb(212, 223, 241);
+}
+
+.dot {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(212, 223, 241);
+    border-radius: 50%;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.card {
+    margin-left: 10px;
+}
+
+.card-header-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-solutions {
+    background-color: rgb(248, 120, 73);
+}
+
+a:hover {
+    box-shadow: 0 .125rem .25rem orangered;
+}
+
+.cardsFrame {
+    margin-left: 5%;
+    margin-right: 5%;
+}
