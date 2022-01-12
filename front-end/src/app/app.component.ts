@@ -64,6 +64,7 @@ export class AppComponent {
             this.trace.PageId = Pages.Home;
             //Si esta en el home se genera nuevo requestId
             this.requestService.setNewRequestId();
+            //Asigna requestId
             this.trace.RequestId = this.requestService.getRequestId();               
             break;
         }
