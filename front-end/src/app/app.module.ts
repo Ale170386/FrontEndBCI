@@ -20,6 +20,7 @@ import { CompanyformComponent } from './pages/companyform/companyform.component'
 import { ConfimComponent } from './pages/confim/confim.component';
 import { PollComponent } from './modals/poll/poll.component';
 import { TabGroupStretchedComponent } from './components/tab-group-stretched/tab-group-stretched.component';
+import { Ng9RutModule } from 'ng9-rut';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { TabGroupStretchedComponent } from './components/tab-group-stretched/tab
     APP_ROUTING,
     FormsModule,
     HttpClientModule,
-    FontAwesomeModule    
+    FontAwesomeModule,
+    Ng9RutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

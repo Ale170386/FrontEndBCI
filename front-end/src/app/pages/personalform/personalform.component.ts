@@ -4,6 +4,7 @@ import { FormControl, NgForm, Validators } from '@angular/forms';
 import {ClientModel} from '../../models/client.model';
 import Swal from 'sweetalert2';
 import { RequestService } from '../../services/request.service';
+import { rutValidate, RutValidator } from 'ng9-rut';
 
 @Component({
   selector: 'app-personalform',
@@ -13,11 +14,12 @@ import { RequestService } from '../../services/request.service';
 export class PersonalformComponent implements OnInit {
 
   client: ClientModel = new ClientModel();  
-  emailFormControl = new FormControl('', [Validators.required, Validators.email]);  
+  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
 
   constructor(private router: Router,
               private route: ActivatedRoute,
-              private requestService: RequestService) {
+              private requestService: RequestService              
+              ) {
    }
 
   ngOnInit(): void {

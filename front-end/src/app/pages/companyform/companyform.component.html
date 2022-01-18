@@ -38,7 +38,7 @@
         </div>
 
         <div class="form-row pt-2">
-            <mat-form-field appearance="fill" style="margin-right: 5px;">
+            <mat-form-field appearance="fill" style="margin-right: 5px; width: 50%;">
                 <mat-label>Seleccione un Nivel de Ventas</mat-label>
                 <mat-select [(ngModel)]="company.salesAmountId" name="salesAmount" required>
                     <mat-option *ngFor="let sale of sales" [value]="sale.codigo">

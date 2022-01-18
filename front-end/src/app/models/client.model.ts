@@ -1,6 +1,7 @@
 export class ClientModel {
 
     id: string;
+    rutClient: string;
     name: string;
     lastName: string;
     phone: string;
