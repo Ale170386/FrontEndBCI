@@ -2,7 +2,7 @@
     <div class="p-2">
         <div class="card-body border-0">
             <h3 class="card-title"><strong>¡Perfecto!</strong></h3>
-            <p class="card-text">Para conocerte mejor, solo tenemos que hacerte un par de preguntas y asi, podrás optar por estos beneficios y productos:</p>
+            <p class="card-text">Para conocerte mejor, solo tenemos que hacerte un par de preguntas y así, podrás optar por estos beneficios y productos:</p>
         </div>
     </div>
 </div>
@@ -15,7 +15,7 @@
                     <mat-label>Rut</mat-label>
                     <input matInput [(ngModel)]="client.rutClient" name="rutClient" placeholder="Rut" validateRut formatRut required>
                     <mat-error>
-                        Por favor ingrese un rut valido
+                        Por favor ingrese un Rut valido
                     </mat-error>
                 </mat-form-field>
             </div>
@@ -68,7 +68,7 @@
                     <mat-label>Rut empresa</mat-label>
                     <input matInput [(ngModel)]="client.companyRut" name="companyRut" placeholder="Rut Empresa" validateRut formatRut required>
                     <mat-error>
-                        Por favor ingrese un rut valido
+                        Por favor ingrese un Rut valido
                     </mat-error>
                 </mat-form-field>
             </div>
@@ -82,7 +82,7 @@
             </div>
             <div class="form-group col-md-6">
                 <mat-form-field class="full-width" appearance="fill">
-                    <mat-label>Años de antiguedad de la empresa</mat-label>
+                    <mat-label>Años de antigüedad de la empresa</mat-label>
                     <input matInput [(ngModel)]="client.yearsOld" name="yearsOld" placeholder="Años de antiguedad de la empresa" required (keypress)="keyPressNumbers($event)">
                 </mat-form-field>
             </div>

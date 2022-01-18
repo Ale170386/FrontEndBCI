@@ -51,7 +51,7 @@ export class PollComponent implements OnInit {
             }
       }).then((result) => {
         this.activeModal.close('Close click');
-        this.router.navigate( ['/home'] );
+        //this.router.navigate( ['/home'] );
       })
       console.log(resp)
 
