@@ -8,14 +8,14 @@
     <p class="lead">Tienes pre-aprobado tu activación de Banca Digital con BCI</p>
 
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-12">
             <!-- <div class="rounded-md shadow-normal-hover p-3 d-flex justify-content-md-start align-items-center h-110 mb-4">            
             <mat-label>Productos pre-aprobados</mat-label>
             <input matInput disabled value="Cuenta corriente POS de BCI Pagos">
         </div> -->
             <mat-form-field class="full-width" appearance="fill">
                 <mat-label>Productos pre-aprobados</mat-label>
-                <input class="input-data" matInput disabled value="Cuenta corriente POS de BCI Pagos">
+                <input class="input-data" matInput disabled [(ngModel)]="products" name="products">
             </mat-form-field>
         </div>
     </div>
@@ -23,13 +23,13 @@
         <div class="col-md-4">
             <mat-form-field class="full-width" appearance="fill">
                 <mat-label>Datos empresa</mat-label>
-                <input class="input-data" matInput disabled value="Empresa los Tres Mosqueteros">
+                <input class="input-data" matInput disabled [(ngModel)]="company" name="company">
             </mat-form-field>
         </div>
         <div class="col-md-4">
             <mat-form-field class="full-width" appearance="fill">
                 <mat-label>Fecha solicitud</mat-label>
-                <input class="input-data" matInput disabled value="23 Diciembre 2021">
+                <input class="input-data" matInput disabled [(ngModel)]="requestDate">
             </mat-form-field>
         </div>
     </div>

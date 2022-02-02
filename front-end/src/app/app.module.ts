@@ -6,6 +6,7 @@ import { APP_ROUTING } from './app.routes';
 
 import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { DatePipe } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -40,7 +41,9 @@ import { Ng9RutModule } from 'ng9-rut';
     FontAwesomeModule,
     Ng9RutModule
   ],
-  providers: [],
+  providers: [
+    DatePipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

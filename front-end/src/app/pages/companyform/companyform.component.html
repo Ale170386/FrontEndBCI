@@ -50,7 +50,7 @@
 
         <h3 class="card-title"><strong>Cliquea acá el producto que más te intereso de esta oferta</strong></h3>
 
-        <mat-selection-list [(ngModel)]="products" name="products" #shoes required>
+        <mat-selection-list [(ngModel)]="products" name="products" (selectionChange)="onGroupsChange(shoes.selectedOptions.selected)" #shoes required>
             <mat-list-option *ngFor="let profile of profiles" [value]="profile.codigo">
                 {{profile.nombre}}
             </mat-list-option>

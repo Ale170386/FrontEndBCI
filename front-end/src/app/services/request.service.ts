@@ -20,7 +20,7 @@ export class RequestService {
   };
 
 
-  request: RequestModel = new RequestModel();
+  request: RequestModel = new RequestModel();  
   constructor(private http: HttpClient) { }
 
   addPersonal(client: ClientModel){

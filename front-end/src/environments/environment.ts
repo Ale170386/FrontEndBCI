@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiBackEnd: "https://localhost:7169/",
+  apiBackEnd: "https://biclabs.eastus.cloudapp.azure.com/",
   apiBackEndKey: "51ac497a-a2fb-497b-be90-6eb14923f201"
 };
 

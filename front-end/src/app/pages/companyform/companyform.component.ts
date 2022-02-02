@@ -8,6 +8,7 @@ import { CommonService } from '../../services/common.service';
 import { RequestService } from 'src/app/services/request.service';
 import { Observable } from 'rxjs';
 import { BackendService } from 'src/app/services/backend.service';
+import { MatListOption } from '@angular/material/list/selection-list';
 
 @Component({
   selector: 'app-companyform',
@@ -25,6 +26,7 @@ export class CompanyformComponent implements OnInit {
   confirmSendInfo = false;
   products:number[] = [];
   otherProduct:string = "";
+  selectedProducts: string[];
 
   constructor(private router: Router,
               private commonService: CommonService,
@@ -74,7 +76,7 @@ export class CompanyformComponent implements OnInit {
 
     if (this.confirmSendInfo) {
       this.company.regionId = this.company.regionId.nombre;
-      this.company.addProductValues(this.products, this.otherProduct);
+      this.company.addProductValues(this.products, this.selectedProducts, this.otherProduct);
       this.requestService.addCompany(this.company);
 
       Swal.fire({
@@ -111,6 +113,10 @@ export class CompanyformComponent implements OnInit {
           this.comunas = resp;
           this.loading = false;
         });
+  }
+
+  onGroupsChange(options: MatListOption[]) {
+    this.selectedProducts = options.map(o => o._text.nativeElement.innerHTML);
   }
 
 }
